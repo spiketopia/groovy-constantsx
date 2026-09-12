@@ -1,0 +1,9 @@
+{
+  "animations": [
+    {"src": "https://www.animatedimages.org/data/media/570/animated-merry-christmas-image-0116.gif", "style": {"width": 140, "aspectRatio": 1.95857988166, "position": "absolute", "left": 64, "bottom": 4}, "onSidebarClose": "hide"},
+    {"src": "https://ugokawaii.com/wp-content/uploads/2023/12/santaclaus.gif", "style": { "width": 56, "aspectRatio": 1, "margin": 4 } }
+  ],
+  "parentStyle": "",
+  "startDate": "2025-12-25",
+  "endDate": "2025-12-26"
+}

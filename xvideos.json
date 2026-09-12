@@ -1,0 +1,158 @@
+[
+  {
+    "id": "home",
+    "type": "home",
+    "label": "Home",
+    "icon": "house",
+    "props": {
+      "src": "https://www.xvideos.com/",
+      "injection": "try{window.ReactNativeWebView.postMessage(JSON.stringify({list:[].slice.call(document.querySelectorAll('.thumb-block, .mozaique .thumb-block')).slice(0,40).map(function(e){var a=e.querySelector('.thumb-under .title a, p.title a, .thumb a');var img=e.querySelector('img');return{title:(a&&(a.title||a.textContent)||'').trim(),src:(a&&a.href)||'',thumbnailUrl:(img&&(img.getAttribute('data-src')||img.src))||'',duration:((e.querySelector('.duration, .metadata .duration')||{}).textContent||'').trim(),quality:(e.querySelector('.video-hd-mark, .hd-mark')?'HD':''),preview:(img&&img.getAttribute('data-videopreview'))||''};}),links:[].slice.call(document.querySelectorAll('#tabCategories a, .navbar a, #home-tabs a')).slice(0,20).map(function(e){return{src:e.href,name:(e.textContent||'').trim(),star:e.href.indexOf('/pornstar')>-1||e.href.indexOf('/model')>-1,search:e.href.indexOf('/?k=')>-1};}),linksName:[],lastPage:(function(){var p=document.querySelectorAll('.pagination li a, .pagination a');var n=1;for(var i=0;i<p.length;i++){var v=parseInt(p[i].textContent);if(v>n)n=v;}return n;})()}));}catch(err){window.ReactNativeWebView.postMessage(JSON.stringify({list:[],lastPage:1,error:String(err)}));}true;",
+      "videoInjection": "try{var h=document.documentElement.innerHTML,u={};var hi=h.match(/setVideoUrlHigh\\('([^']+)'\\)/);if(hi)u['High']=hi[1];var lo=h.match(/setVideoUrlLow\\('([^']+)'\\)/);if(lo)u['Low']=lo[1];var hl=h.match(/setVideoHLS\\('([^']+)'\\)/);if(hl)u['HLS']=hl[1];window.ReactNativeWebView.postMessage(JSON.stringify({ready:true,url:u,headers:{Referer:'https://www.xvideos.com/'},imageHeaders:{Referer:'https://www.xvideos.com/'},title:((document.querySelector('h2.page-title')||{}).textContent||'').trim(),views:((document.querySelector('.nb-views-number, #v-views .mobile-hide')||{}).textContent||'').trim(),likes:((document.querySelector('.rating-good-nbr, .vote-action-good .value')||{}).textContent||'').trim(),links:[],recommendedVideos:[]}));}catch(err){window.ReactNativeWebView.postMessage(JSON.stringify({ready:false,error:String(err)}));}true;",
+      "imageHeaders": {
+        "Referer": "https://www.xvideos.com/"
+      },
+      "proxyEnabled": true
+    }
+  },
+  {
+    "id": "search",
+    "type": "search",
+    "label": "Search",
+    "icon": "magnifying-glass",
+    "props": {
+      "src": "https://www.xvideos.com/?k=${searchQuery}",
+      "injection": "try{window.ReactNativeWebView.postMessage(JSON.stringify({list:[].slice.call(document.querySelectorAll('.thumb-block, .mozaique .thumb-block')).slice(0,40).map(function(e){var a=e.querySelector('.thumb-under .title a, p.title a, .thumb a');var img=e.querySelector('img');return{title:(a&&(a.title||a.textContent)||'').trim(),src:(a&&a.href)||'',thumbnailUrl:(img&&(img.getAttribute('data-src')||img.src))||'',duration:((e.querySelector('.duration, .metadata .duration')||{}).textContent||'').trim(),quality:(e.querySelector('.video-hd-mark, .hd-mark')?'HD':''),preview:(img&&img.getAttribute('data-videopreview'))||''};}),links:[].slice.call(document.querySelectorAll('#tabCategories a, .navbar a, #home-tabs a')).slice(0,20).map(function(e){return{src:e.href,name:(e.textContent||'').trim(),star:e.href.indexOf('/pornstar')>-1||e.href.indexOf('/model')>-1,search:e.href.indexOf('/?k=')>-1};}),linksName:[],lastPage:(function(){var p=document.querySelectorAll('.pagination li a, .pagination a');var n=1;for(var i=0;i<p.length;i++){var v=parseInt(p[i].textContent);if(v>n)n=v;}return n;})()}));}catch(err){window.ReactNativeWebView.postMessage(JSON.stringify({list:[],lastPage:1,error:String(err)}));}true;",
+      "open": {
+        "type": "searchVideos",
+        "links": [
+          "/?k=",
+          "xvideos.com"
+        ],
+        "tabs": [
+          {
+            "name": "Relevance",
+            "src": "https://www.xvideos.com/?k=${searchQuery}&p=${page}"
+          }
+        ],
+        "injection": "try{window.ReactNativeWebView.postMessage(JSON.stringify({list:[].slice.call(document.querySelectorAll('.thumb-block, .mozaique .thumb-block')).slice(0,40).map(function(e){var a=e.querySelector('.thumb-under .title a, p.title a, .thumb a');var img=e.querySelector('img');return{title:(a&&(a.title||a.textContent)||'').trim(),src:(a&&a.href)||'',thumbnailUrl:(img&&(img.getAttribute('data-src')||img.src))||'',duration:((e.querySelector('.duration, .metadata .duration')||{}).textContent||'').trim(),quality:(e.querySelector('.video-hd-mark, .hd-mark')?'HD':''),preview:(img&&img.getAttribute('data-videopreview'))||''};}),links:[].slice.call(document.querySelectorAll('#tabCategories a, .navbar a, #home-tabs a')).slice(0,20).map(function(e){return{src:e.href,name:(e.textContent||'').trim(),star:e.href.indexOf('/pornstar')>-1||e.href.indexOf('/model')>-1,search:e.href.indexOf('/?k=')>-1};}),linksName:[],lastPage:(function(){var p=document.querySelectorAll('.pagination li a, .pagination a');var n=1;for(var i=0;i<p.length;i++){var v=parseInt(p[i].textContent);if(v>n)n=v;}return n;})()}));}catch(err){window.ReactNativeWebView.postMessage(JSON.stringify({list:[],lastPage:1,error:String(err)}));}true;",
+        "videoInjection": "try{var h=document.documentElement.innerHTML,u={};var hi=h.match(/setVideoUrlHigh\\('([^']+)'\\)/);if(hi)u['High']=hi[1];var lo=h.match(/setVideoUrlLow\\('([^']+)'\\)/);if(lo)u['Low']=lo[1];var hl=h.match(/setVideoHLS\\('([^']+)'\\)/);if(hl)u['HLS']=hl[1];window.ReactNativeWebView.postMessage(JSON.stringify({ready:true,url:u,headers:{Referer:'https://www.xvideos.com/'},imageHeaders:{Referer:'https://www.xvideos.com/'},title:((document.querySelector('h2.page-title')||{}).textContent||'').trim(),views:((document.querySelector('.nb-views-number, #v-views .mobile-hide')||{}).textContent||'').trim(),likes:((document.querySelector('.rating-good-nbr, .vote-action-good .value')||{}).textContent||'').trim(),links:[],recommendedVideos:[]}));}catch(err){window.ReactNativeWebView.postMessage(JSON.stringify({ready:false,error:String(err)}));}true;",
+        "proxyEnabled": true
+      }
+    }
+  },
+  {
+    "id": "favorites",
+    "type": "favorites",
+    "label": "Favorites",
+    "icon": "star",
+    "props": {
+      "imageHeaders": {
+        "Referer": "https://www.xvideos.com/"
+      },
+      "videoInjection": "try{var h=document.documentElement.innerHTML,u={};var hi=h.match(/setVideoUrlHigh\\('([^']+)'\\)/);if(hi)u['High']=hi[1];var lo=h.match(/setVideoUrlLow\\('([^']+)'\\)/);if(lo)u['Low']=lo[1];var hl=h.match(/setVideoHLS\\('([^']+)'\\)/);if(hl)u['HLS']=hl[1];window.ReactNativeWebView.postMessage(JSON.stringify({ready:true,url:u,headers:{Referer:'https://www.xvideos.com/'},imageHeaders:{Referer:'https://www.xvideos.com/'},title:((document.querySelector('h2.page-title')||{}).textContent||'').trim(),views:((document.querySelector('.nb-views-number, #v-views .mobile-hide')||{}).textContent||'').trim(),likes:((document.querySelector('.rating-good-nbr, .vote-action-good .value')||{}).textContent||'').trim(),links:[],recommendedVideos:[]}));}catch(err){window.ReactNativeWebView.postMessage(JSON.stringify({ready:false,error:String(err)}));}true;",
+      "proxyEnabled": true
+    }
+  },
+  {
+    "id": "categories",
+    "type": "collections",
+    "label": "Categories",
+    "icon": "tags",
+    "props": {
+      "injection": "try{window.ReactNativeWebView.postMessage(JSON.stringify({list:[].slice.call(document.querySelectorAll('.thumb-block, .mozaique .thumb-block')).slice(0,40).map(function(e){var a=e.querySelector('.thumb-under .title a, p.title a, .thumb a');var img=e.querySelector('img');return{title:(a&&(a.title||a.textContent)||'').trim(),src:(a&&a.href)||'',thumbnailUrl:(img&&(img.getAttribute('data-src')||img.src))||'',duration:((e.querySelector('.duration, .metadata .duration')||{}).textContent||'').trim(),quality:(e.querySelector('.video-hd-mark, .hd-mark')?'HD':''),preview:(img&&img.getAttribute('data-videopreview'))||''};}),links:[].slice.call(document.querySelectorAll('#tabCategories a, .navbar a, #home-tabs a')).slice(0,20).map(function(e){return{src:e.href,name:(e.textContent||'').trim(),star:e.href.indexOf('/pornstar')>-1||e.href.indexOf('/model')>-1,search:e.href.indexOf('/?k=')>-1};}),linksName:[],lastPage:(function(){var p=document.querySelectorAll('.pagination li a, .pagination a');var n=1;for(var i=0;i<p.length;i++){var v=parseInt(p[i].textContent);if(v>n)n=v;}return n;})()}));}catch(err){window.ReactNativeWebView.postMessage(JSON.stringify({list:[],lastPage:1,error:String(err)}));}true;",
+      "imgAspectRatio": 1.77,
+      "tabs": [
+        {
+          "name": "Tags",
+          "src": "https://www.xvideos.com/tags",
+          "sublist": null
+        }
+      ],
+      "open": {
+        "type": "videos",
+        "links": [
+          "/tags/",
+          "/c/",
+          "/?k="
+        ],
+        "tabs": [
+          {
+            "name": "Latest",
+            "src": "${src}/${page}"
+          }
+        ],
+        "injection": "try{window.ReactNativeWebView.postMessage(JSON.stringify({list:[].slice.call(document.querySelectorAll('.thumb-block, .mozaique .thumb-block')).slice(0,40).map(function(e){var a=e.querySelector('.thumb-under .title a, p.title a, .thumb a');var img=e.querySelector('img');return{title:(a&&(a.title||a.textContent)||'').trim(),src:(a&&a.href)||'',thumbnailUrl:(img&&(img.getAttribute('data-src')||img.src))||'',duration:((e.querySelector('.duration, .metadata .duration')||{}).textContent||'').trim(),quality:(e.querySelector('.video-hd-mark, .hd-mark')?'HD':''),preview:(img&&img.getAttribute('data-videopreview'))||''};}),links:[].slice.call(document.querySelectorAll('#tabCategories a, .navbar a, #home-tabs a')).slice(0,20).map(function(e){return{src:e.href,name:(e.textContent||'').trim(),star:e.href.indexOf('/pornstar')>-1||e.href.indexOf('/model')>-1,search:e.href.indexOf('/?k=')>-1};}),linksName:[],lastPage:(function(){var p=document.querySelectorAll('.pagination li a, .pagination a');var n=1;for(var i=0;i<p.length;i++){var v=parseInt(p[i].textContent);if(v>n)n=v;}return n;})()}));}catch(err){window.ReactNativeWebView.postMessage(JSON.stringify({list:[],lastPage:1,error:String(err)}));}true;",
+        "videoInjection": "try{var h=document.documentElement.innerHTML,u={};var hi=h.match(/setVideoUrlHigh\\('([^']+)'\\)/);if(hi)u['High']=hi[1];var lo=h.match(/setVideoUrlLow\\('([^']+)'\\)/);if(lo)u['Low']=lo[1];var hl=h.match(/setVideoHLS\\('([^']+)'\\)/);if(hl)u['HLS']=hl[1];window.ReactNativeWebView.postMessage(JSON.stringify({ready:true,url:u,headers:{Referer:'https://www.xvideos.com/'},imageHeaders:{Referer:'https://www.xvideos.com/'},title:((document.querySelector('h2.page-title')||{}).textContent||'').trim(),views:((document.querySelector('.nb-views-number, #v-views .mobile-hide')||{}).textContent||'').trim(),likes:((document.querySelector('.rating-good-nbr, .vote-action-good .value')||{}).textContent||'').trim(),links:[],recommendedVideos:[]}));}catch(err){window.ReactNativeWebView.postMessage(JSON.stringify({ready:false,error:String(err)}));}true;",
+        "proxyEnabled": true
+      }
+    }
+  },
+  {
+    "id": "channels",
+    "type": "collections",
+    "label": "Channels",
+    "icon": "grip",
+    "props": {
+      "injection": "try{window.ReactNativeWebView.postMessage(JSON.stringify({list:[].slice.call(document.querySelectorAll('.thumb-block, .mozaique .thumb-block')).slice(0,40).map(function(e){var a=e.querySelector('.thumb-under .title a, p.title a, .thumb a');var img=e.querySelector('img');return{title:(a&&(a.title||a.textContent)||'').trim(),src:(a&&a.href)||'',thumbnailUrl:(img&&(img.getAttribute('data-src')||img.src))||'',duration:((e.querySelector('.duration, .metadata .duration')||{}).textContent||'').trim(),quality:(e.querySelector('.video-hd-mark, .hd-mark')?'HD':''),preview:(img&&img.getAttribute('data-videopreview'))||''};}),links:[].slice.call(document.querySelectorAll('#tabCategories a, .navbar a, #home-tabs a')).slice(0,20).map(function(e){return{src:e.href,name:(e.textContent||'').trim(),star:e.href.indexOf('/pornstar')>-1||e.href.indexOf('/model')>-1,search:e.href.indexOf('/?k=')>-1};}),linksName:[],lastPage:(function(){var p=document.querySelectorAll('.pagination li a, .pagination a');var n=1;for(var i=0;i<p.length;i++){var v=parseInt(p[i].textContent);if(v>n)n=v;}return n;})()}));}catch(err){window.ReactNativeWebView.postMessage(JSON.stringify({list:[],lastPage:1,error:String(err)}));}true;",
+      "imgAspectRatio": 1.0,
+      "small": true,
+      "tabs": [
+        {
+          "name": "Channels",
+          "src": "https://www.xvideos.com/channels",
+          "sublist": null
+        }
+      ],
+      "open": {
+        "type": "channelVideos",
+        "links": [
+          "/channels/"
+        ],
+        "tabs": [
+          {
+            "name": "Recent",
+            "src": "${src}/videos/new/${page}"
+          }
+        ],
+        "injection": "try{window.ReactNativeWebView.postMessage(JSON.stringify({list:[].slice.call(document.querySelectorAll('.thumb-block, .mozaique .thumb-block')).slice(0,40).map(function(e){var a=e.querySelector('.thumb-under .title a, p.title a, .thumb a');var img=e.querySelector('img');return{title:(a&&(a.title||a.textContent)||'').trim(),src:(a&&a.href)||'',thumbnailUrl:(img&&(img.getAttribute('data-src')||img.src))||'',duration:((e.querySelector('.duration, .metadata .duration')||{}).textContent||'').trim(),quality:(e.querySelector('.video-hd-mark, .hd-mark')?'HD':''),preview:(img&&img.getAttribute('data-videopreview'))||''};}),links:[].slice.call(document.querySelectorAll('#tabCategories a, .navbar a, #home-tabs a')).slice(0,20).map(function(e){return{src:e.href,name:(e.textContent||'').trim(),star:e.href.indexOf('/pornstar')>-1||e.href.indexOf('/model')>-1,search:e.href.indexOf('/?k=')>-1};}),linksName:[],lastPage:(function(){var p=document.querySelectorAll('.pagination li a, .pagination a');var n=1;for(var i=0;i<p.length;i++){var v=parseInt(p[i].textContent);if(v>n)n=v;}return n;})()}));}catch(err){window.ReactNativeWebView.postMessage(JSON.stringify({list:[],lastPage:1,error:String(err)}));}true;",
+        "videoInjection": "try{var h=document.documentElement.innerHTML,u={};var hi=h.match(/setVideoUrlHigh\\('([^']+)'\\)/);if(hi)u['High']=hi[1];var lo=h.match(/setVideoUrlLow\\('([^']+)'\\)/);if(lo)u['Low']=lo[1];var hl=h.match(/setVideoHLS\\('([^']+)'\\)/);if(hl)u['HLS']=hl[1];window.ReactNativeWebView.postMessage(JSON.stringify({ready:true,url:u,headers:{Referer:'https://www.xvideos.com/'},imageHeaders:{Referer:'https://www.xvideos.com/'},title:((document.querySelector('h2.page-title')||{}).textContent||'').trim(),views:((document.querySelector('.nb-views-number, #v-views .mobile-hide')||{}).textContent||'').trim(),likes:((document.querySelector('.rating-good-nbr, .vote-action-good .value')||{}).textContent||'').trim(),links:[],recommendedVideos:[]}));}catch(err){window.ReactNativeWebView.postMessage(JSON.stringify({ready:false,error:String(err)}));}true;",
+        "proxyEnabled": true
+      }
+    }
+  },
+  {
+    "id": "stars",
+    "type": "collections",
+    "label": "Pornstars",
+    "icon": "user",
+    "props": {
+      "injection": "try{window.ReactNativeWebView.postMessage(JSON.stringify({list:[].slice.call(document.querySelectorAll('.thumb-block, .mozaique .thumb-block')).slice(0,40).map(function(e){var a=e.querySelector('.thumb-under .title a, p.title a, .thumb a');var img=e.querySelector('img');return{title:(a&&(a.title||a.textContent)||'').trim(),src:(a&&a.href)||'',thumbnailUrl:(img&&(img.getAttribute('data-src')||img.src))||'',duration:((e.querySelector('.duration, .metadata .duration')||{}).textContent||'').trim(),quality:(e.querySelector('.video-hd-mark, .hd-mark')?'HD':''),preview:(img&&img.getAttribute('data-videopreview'))||''};}),links:[].slice.call(document.querySelectorAll('#tabCategories a, .navbar a, #home-tabs a')).slice(0,20).map(function(e){return{src:e.href,name:(e.textContent||'').trim(),star:e.href.indexOf('/pornstar')>-1||e.href.indexOf('/model')>-1,search:e.href.indexOf('/?k=')>-1};}),linksName:[],lastPage:(function(){var p=document.querySelectorAll('.pagination li a, .pagination a');var n=1;for(var i=0;i<p.length;i++){var v=parseInt(p[i].textContent);if(v>n)n=v;}return n;})()}));}catch(err){window.ReactNativeWebView.postMessage(JSON.stringify({list:[],lastPage:1,error:String(err)}));}true;",
+      "imgAspectRatio": 1.0,
+      "tabs": [
+        {
+          "name": "Pornstars",
+          "src": "https://www.xvideos.com/pornstars",
+          "sublist": null
+        }
+      ],
+      "open": {
+        "type": "starVideos",
+        "links": [
+          "/pornstar/",
+          "/model/",
+          "/models/",
+          "/porn-star/"
+        ],
+        "tabs": [
+          {
+            "name": "All",
+            "src": "${src}"
+          }
+        ],
+        "injection": "try{window.ReactNativeWebView.postMessage(JSON.stringify({list:[].slice.call(document.querySelectorAll('.thumb-block, .mozaique .thumb-block')).slice(0,40).map(function(e){var a=e.querySelector('.thumb-under .title a, p.title a, .thumb a');var img=e.querySelector('img');return{title:(a&&(a.title||a.textContent)||'').trim(),src:(a&&a.href)||'',thumbnailUrl:(img&&(img.getAttribute('data-src')||img.src))||'',duration:((e.querySelector('.duration, .metadata .duration')||{}).textContent||'').trim(),quality:(e.querySelector('.video-hd-mark, .hd-mark')?'HD':''),preview:(img&&img.getAttribute('data-videopreview'))||''};}),links:[].slice.call(document.querySelectorAll('#tabCategories a, .navbar a, #home-tabs a')).slice(0,20).map(function(e){return{src:e.href,name:(e.textContent||'').trim(),star:e.href.indexOf('/pornstar')>-1||e.href.indexOf('/model')>-1,search:e.href.indexOf('/?k=')>-1};}),linksName:[],lastPage:(function(){var p=document.querySelectorAll('.pagination li a, .pagination a');var n=1;for(var i=0;i<p.length;i++){var v=parseInt(p[i].textContent);if(v>n)n=v;}return n;})()}));}catch(err){window.ReactNativeWebView.postMessage(JSON.stringify({list:[],lastPage:1,error:String(err)}));}true;",
+        "videoInjection": "try{var h=document.documentElement.innerHTML,u={};var hi=h.match(/setVideoUrlHigh\\('([^']+)'\\)/);if(hi)u['High']=hi[1];var lo=h.match(/setVideoUrlLow\\('([^']+)'\\)/);if(lo)u['Low']=lo[1];var hl=h.match(/setVideoHLS\\('([^']+)'\\)/);if(hl)u['HLS']=hl[1];window.ReactNativeWebView.postMessage(JSON.stringify({ready:true,url:u,headers:{Referer:'https://www.xvideos.com/'},imageHeaders:{Referer:'https://www.xvideos.com/'},title:((document.querySelector('h2.page-title')||{}).textContent||'').trim(),views:((document.querySelector('.nb-views-number, #v-views .mobile-hide')||{}).textContent||'').trim(),likes:((document.querySelector('.rating-good-nbr, .vote-action-good .value')||{}).textContent||'').trim(),links:[],recommendedVideos:[]}));}catch(err){window.ReactNativeWebView.postMessage(JSON.stringify({ready:false,error:String(err)}));}true;",
+        "proxyEnabled": true
+      }
+    }
+  }
+]
