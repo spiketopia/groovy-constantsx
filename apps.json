@@ -1,5 +1,5 @@
 {
-  "trialExpiry": "2020-01-01T00:00:00Z",
+  "trialExpiry": "2099-12-31T00:00:00Z",
   "movieApps": [
     {
       "name": "XGroovy",
