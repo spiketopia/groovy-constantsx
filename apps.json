@@ -5,8 +5,7 @@
       "name": "XGroovy",
       "navigateTo": "Home",
       "color": "#5a13ff",
-      "textColor": "#ffffff",
-      "adult": true
+      "img": "https://raw.githubusercontent.com/spiketopia/groovy-constantsx/refs/heads/main/xgroovy.png"
     }
   ],
   "decodedWebsites": []
