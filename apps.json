@@ -1,21 +1,13 @@
 {
   "trialExpiry": "2020-01-01T00:00:00Z",
-  "movieApps": [],
-  "decodedWebsites": [
+  "movieApps": [
     {
-      "name": "Xgroovy",
+      "name": "XGroovy",
       "navigateTo": "Home",
-      "textColor": "#dd2700",
       "color": "#5a13ff",
-      "adult": true
-    },
-    {
-      "name": "Xvideos",
-      "id": "xvideos",
-      "navigateTo": "FrameworkNavigationScreen",
       "textColor": "#ffffff",
-      "color": "#12181f",
       "adult": true
     }
-  ]
+  ],
+  "decodedWebsites": []
 }
