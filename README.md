@@ -1,6 +1,6 @@
 # groovy-constantsx
 
-Public runtime configuration for the GroovyTV client (owner-hosted fork of the
+Public runtime configuration for the tV client (owner-hosted fork of the
 constants feed). Contains only JSON config and this README. No app binaries,
 keystores, secrets, credentials, cookies, or tokens.
 
